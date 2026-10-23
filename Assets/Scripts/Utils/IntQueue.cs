@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 
 namespace Utils {
+    [Serializable]
     public class GenericQueue<T> {
-        private List<T> queue;
+        public List<T> queue;
         public int Count => queue.Count;
         public GenericQueue() {
             queue = new List<T>();
