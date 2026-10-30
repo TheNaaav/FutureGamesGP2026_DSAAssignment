@@ -55,6 +55,7 @@ MonoBehaviour:
   taskQueue:
     queue:
     - {fileID: 11400000, guid: e0e46c26b15828c47acc3a7e2a0fecd9, type: 2}
+    - {fileID: 11400000, guid: 8ebf6feab29c0064a8299b5188fdf12c, type: 2}
   allEmployees: []
 --- !u!1001 &1440861543908505829
 PrefabInstance:
