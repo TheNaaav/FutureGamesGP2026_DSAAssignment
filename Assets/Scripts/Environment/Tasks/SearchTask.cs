@@ -20,13 +20,13 @@ namespace Environment.Tasks {
             DateTime startTime = DateTime.Parse(startTimeString);
             DateTime endTime = DateTime.Parse(endTimeString);
 
-            // Starta tidtagning (Benchmark)
+            // Start timing (Benchmark)
             Stopwatch stopwatch = Stopwatch.StartNew();
 
-            // Kör Binary Search
+            // Run Binary Search
             List<Employee> suspects = SearchUtils.BinarySearchRange(employees, startTime, endTime);
 
-            // Stoppa tidtagning
+            // Stop timing
             stopwatch.Stop();
 
             Debug.Log($"Binary Search found...{suspects.Count} \"SUSPECT ->\" {stopwatch.Elapsed.TotalMilliseconds} ms ({stopwatch.ElapsedTicks} ticks):");
