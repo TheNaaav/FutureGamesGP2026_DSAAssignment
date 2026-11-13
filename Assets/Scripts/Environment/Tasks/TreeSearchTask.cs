@@ -25,6 +25,8 @@ namespace Environment.Tasks {
             List<Employee> suspects = tree.DFS(startTime, endTime);
             stopwatch.Stop();
 
+            Computer.Instance.suspects = suspects;
+
             Debug.Log($"BST DFS Search found {suspects.Count} suspects in {stopwatch.Elapsed.TotalMilliseconds} ms ({stopwatch.ElapsedTicks} ticks):");
 
             foreach(Employee suspect in suspects) {

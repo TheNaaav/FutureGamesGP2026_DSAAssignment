@@ -29,6 +29,9 @@ namespace Environment.Tasks {
             // Stop timing
             stopwatch.Stop();
 
+            // Store suspects in Computer so they show up in the Unity Inspector
+            Computer.Instance.suspects = suspects;
+
             Debug.Log($"Binary Search found...{suspects.Count} \"SUSPECT ->\" {stopwatch.Elapsed.TotalMilliseconds} ms ({stopwatch.ElapsedTicks} ticks):");
 
             foreach(Employee suspect in suspects) {

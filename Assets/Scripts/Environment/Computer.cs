@@ -1,4 +1,5 @@
-﻿using Environment.Tasks;
+﻿using System.Collections.Generic;
+using Environment.Tasks;
 using UnityEngine;
 using Utils;
 
@@ -9,6 +10,7 @@ namespace Environment {
         [SerializeField]
         private GenericQueue<Task> taskQueue = new GenericQueue<Task>();
         public Employee[] allEmployees;
+        public List<Employee> suspects;
         public BinarySearchTree employeeTree;
         private void Awake() {
             Instance = this;
