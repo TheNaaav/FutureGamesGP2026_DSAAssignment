@@ -5,6 +5,9 @@ namespace Environment.Tasks {
     [CreateAssetMenu(fileName = "SortingTask", menuName = "Tasks/SortingTask")]
     public class SortingTask : Task {
         public override void Execute() {
+            QuickSort();
+        }
+        public void QuickSort() {
             Employee[] employees = Computer.Instance.allEmployees;
 
             SortingUtils.QuickSort(employees, 0, employees.Length - 1);

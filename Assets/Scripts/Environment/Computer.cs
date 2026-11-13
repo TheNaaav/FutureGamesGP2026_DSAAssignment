@@ -9,7 +9,7 @@ namespace Environment {
         [SerializeField]
         private GenericQueue<Task> taskQueue = new GenericQueue<Task>();
         public Employee[] allEmployees;
-
+        public BinarySearchTree employeeTree;
         private void Awake() {
             Instance = this;
         }
