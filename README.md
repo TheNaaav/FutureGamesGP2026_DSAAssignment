@@ -8,6 +8,7 @@ My search found four suspects who entered at 22:13:17:
 - Alfred Pugsley (ID: 192, Last Exit: 2234-08-09T22:14:54)
 - Nem Wellington (ID: 288, Last Exit: 2234-08-02T09:16:49)
 - Helena Blackwood (ID: 764, Last Exit: 2234-08-03T09:43:27)
+
 Alfred Pugsley is the murderer because he is the only person who both entered and exited the engine room between 22:00 and 23:00 on the night of the murder. Alfred Pugsley is the murderer because he is the only one who also exited the engine room during that same hour.
 
 For Week 5, I used a Binary Search Tree BST keeps dates in order (smaller to the left, larger to the right) and I understood the BST example from the lectures better. I built the tree using current and lastParent in the Insert method, and searched it using Depth-First Search (DFS) with a Stack. When I measured the time with Stopwatch, Binary Search on the array was much faster than DFS on the BST. This is because Binary Search cuts the array in half every step and only checks around 10 employees, while DFS checks all 800 nodes in the tree.
